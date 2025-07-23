@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: diffstpp
+Version: 0.1.0
+Requires-Dist: torch<2.7.0,>=2.6.0
+Requires-Dist: torchdiffeq>=0.2.5
+Requires-Dist: tensorboard==2.18.0
+Requires-Dist: matplotlib<4.0.0,>=3.3.4
+Requires-Dist: scipy<2.0.0,>=1.6.2
+Requires-Dist: tqdm<5.0.0,>=4.47.0
+Requires-Dist: numpy<3.0.0,>=1.19.5
+Requires-Dist: ctrnn<3.0,>=2.0
+Requires-Dist: scikit-learn<2.0.0,>=1.0.2
