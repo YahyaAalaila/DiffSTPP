@@ -1,10 +1,8 @@
-import numpy as np
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-import DSTPP.Constants as Constants
-from DSTPP.Modules import ScaledDotProductAttention
+
+from .Modules import ScaledDotProductAttention
 
 
 class MultiHeadAttention(nn.Module):
