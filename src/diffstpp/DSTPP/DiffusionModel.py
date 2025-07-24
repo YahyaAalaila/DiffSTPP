@@ -4,30 +4,18 @@ from functools import partial
 from collections import namedtuple
 
 import torch
-from torch import nn, einsum
+from torch import nn
 import torch.nn.functional as F
 
 from einops import rearrange, reduce
-from einops.layers.torch import Rearrange
 
 from tqdm.auto import tqdm
 
 import numpy as np
 import time
-import tensorflow.compat.v1 as tf
 
-# constants
 
 ModelPrediction =  namedtuple('ModelPrediction', ['pred_noise', 'pred_x_start'])
-
-# helpers functions
-
-# def normal_kl(mean1, logvar1, mean2, logvar2):
-#   """
-#   KL divergence between normal distributions parameterized by mean and log-variance.
-#   """
-#   return 0.5 * (-1.0 + logvar2 - logvar1 + tf.exp(logvar1 - logvar2)
-#                 + tf.squared_difference(mean1, mean2) * tf.exp(-logvar2))
 
 
 def approx_standard_normal_cdf(x):
